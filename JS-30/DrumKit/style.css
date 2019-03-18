@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('http://i.imgur.com/b9r5sEL.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.keys {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.key {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+  margin: 35px;
+  border: 5px solid #000;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.07s;
+}
+
+kbd {
+  font-size: 48px;
+  color: #fff;
+}
+
+.sound {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 900;
+  font-variant: small-caps;
+  text-shadow: 0 0 5px #000;
+  -webkit-animation: colorchange 20s infinite alternate;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #a3f322;
+  box-shadow: 0 0 10px #a3f322;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: #f32222;
+  }
+  10% {
+    color: #f38022;
+  }
+  20% {
+    color: #c2f322;
+  }
+  30% {
+    color: #29f322;
+  }
+  40% {
+    color: #22f372;
+  }
+  50% {
+    color: #2284f3;
+  }
+  60% {
+    color: #3022f3;
+  }
+  70% {
+    color: #8e22f3;
+  }
+  80% {
+    color: #ec22f3;
+  }
+  90% {
+    color: #f322bf;
+  }
+  100% {
+    color: #f3222c;
+  }
+}

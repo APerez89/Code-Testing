@@ -1,0 +1,42 @@
+:root {
+  --base: #BADA55;
+  --spacing: 10px;
+  --blur: 3px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0e3842;
+  color: #fff;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controls {
+  margin: 50px 0;
+}
+
+input {
+  width: 100px;
+}
